@@ -1,0 +1,11 @@
+- name: conditions on loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: install packaegs
+    ansible.builtin.package:
+      msg: "{{ item }}"
+    loop:
+    - nginx
+    - mysql
+    - zip

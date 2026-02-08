@@ -1,0 +1,13 @@
+- name: conditions on loops
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: install packaegs
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - { name: "nginx", state: "present" }
+    - { name: "mysql", state: "absent" }
+    - { name: "zip", state: "present" }

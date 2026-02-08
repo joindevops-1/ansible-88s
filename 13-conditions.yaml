@@ -9,5 +9,5 @@
     ansible.builtin.debug:
       msg: "Yes, more sessions"
     when: 
-    - umber_of_sessions > 5
+    - number_of_sessions > 5
     - IS_LIVE

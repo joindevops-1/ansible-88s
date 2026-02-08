@@ -6,6 +6,9 @@
     DURATION: "10HRS"
     SESSIONS: 7
     IS_LIVE: true
+    Details:
+      trainer: "Sivakumar Reddy"
+      months: "4 month"
     Topics:
     - variables
     - data types
@@ -22,4 +25,5 @@
          Sessions: {{ SESSIONS }} ({{ SESSIONS | type_debug }})
          Is Live?: {{ IS_LIVE }} ({{ IS_LIVE | type_debug }})
          Topics: {{ Topics }} ({{ Topics | type_debug }})
+         Details: {{ Details }} ({{ Details | type_debug }})
       

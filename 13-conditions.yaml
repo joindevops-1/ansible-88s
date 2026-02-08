@@ -3,8 +3,11 @@
   connection: local
   vars:
     number_of_sessions: 6
+    IS_LIVE: true
   tasks:
   - name: more Sessions
     ansible.builtin.debug:
       msg: "Yes, more sessions"
-    when: number_of_sessions > 5
+    when: 
+    - umber_of_sessions > 5
+    - IS_LIVE

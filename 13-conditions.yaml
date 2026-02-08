@@ -1,0 +1,10 @@
+- name: conditions on demo
+  hosts: local
+  connection: local
+  vars:
+    number_of_sessions: 6
+  tasks:
+  - name: more Sessions
+    ansible.builtin.debug:
+      msg: "Yes, more sessions"
+    when: number_of_sessions > 5

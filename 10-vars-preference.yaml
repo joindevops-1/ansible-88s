@@ -5,8 +5,8 @@
     COURSE: "DevOps with AWS from PLAY"
     DURATION: "140HRS"
     TRAINER: "Sivakumar Reddy"
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: COURSE
     prompt: Please enter your COURSE
@@ -20,3 +20,4 @@
 
 # 1. args
 # 2. tasks
+# 3. File

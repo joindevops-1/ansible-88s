@@ -16,10 +16,10 @@
   tasks:
   - name: print the info
     ansible.builtin.debug:
-      msg: >
-        Course: " {{ COURSE }} | type_debug "
-        Duration: {{ DURATION }} | type_debug
-        Sessions: {{ SESSIONS }} | type_debug
-        Is Live?: {{ IS_LIVE }} | type_debug
-        Topics: {{ Topics }} | type_debug
+      msg: |
+         Course: {{ COURSE }} ({{ COURSE | type_debug }})
+         Duration: {{ DURATION }} ({{ DURATION | type_debug }})
+         Sessions: {{ SESSIONS }} ({{ SESSIONS | type_debug }})
+         Is Live?: {{ IS_LIVE }} ({{ IS_LIVE | type_debug }})
+         Topics: {{ Topics }} ({{ Topics | type_debug }})
       

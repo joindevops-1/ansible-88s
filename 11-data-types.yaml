@@ -17,7 +17,7 @@
   - name: print the info
     ansible.builtin.debug:
       msg: >
-        Course: {{ COURSE }} | type_debug
+        Course: " {{ COURSE }} | type_debug "
         Duration: {{ DURATION }} | type_debug
         Sessions: {{ SESSIONS }} | type_debug
         Is Live?: {{ IS_LIVE }} | type_debug

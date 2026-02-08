@@ -8,11 +8,7 @@
       Project: roboshop
       Component: catalogue
       Environment: dev
-    tagsList:
-    - {'key': 'Name', 'value': 'ansible'}
-    - {'key': 'Project', 'value': 'roboshop'}
-    - {'key': 'Component', 'value': 'catalogue'}
-    - {'key': 'Environment', 'value': 'dev'}
+    tagsList: [{'key': 'Name', 'value': 'ansible'}, {'key': 'Project', 'value': 'roboshop'}, {'key': 'Component', 'value': 'catalogue'}, {'key': 'Environment', 'value': 'dev'}]
   tasks:
   - name: print the default value
     ansible.builtin.debug:

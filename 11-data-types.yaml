@@ -1,0 +1,25 @@
+- name: data types demo
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Ansible
+    DURATION: "10HRS"
+    SESSIONS: 7
+    IS_LIVE: true
+    Topics:
+    - variables
+    - data types
+    - conditions
+    - loops
+    - functions
+    - error handling
+  tasks:
+  - name: print the info
+    ansible.builtin.debug:
+      msg: >
+        Course: {{ COURSE }} 
+        Duration: {{ DURATION }}
+        Sessions: {{ SESSIONS }}
+        Is Live?: {{ IS_LIVE }}
+        Topics: {{ Topics }}
+      
